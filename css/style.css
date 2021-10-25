@@ -110,6 +110,25 @@ body {
   color: white;
 }
 
+.slider-buttons {
+  position: absolute;
+  right: 46px;
+  bottom: 40px;
+  z-index: 9;
+  display: flex;
+  align-items: center;
+  width: 100px;
+  justify-content: space-between;
+}
+
+.slider-button {
+  cursor: pointer;
+}
+
+.swiper {
+  position: relative;
+}
+
 .slide-title {
   margin-top: 0;
   margin-bottom: 15px;
@@ -150,6 +169,20 @@ body {
   background-image: url(../img/summer.png);
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.slide-autumn {
+  background-image: url(../img/autumn.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+ 
+}
+
+.slide-vitamins {
+  background-image: url(../img/vitamins.png);
+ background-repeat: no-repeat;
+ background-size: cover;
+  
 }
 
 .slide:before {
@@ -469,7 +502,7 @@ body {
 }
 
 .feature-content {
- padding: 25px;
+  padding: 25px;
 }
 
 .feature-title {
@@ -521,4 +554,132 @@ body {
 .social-link {
   margin-left: 20px;
   text-decoration: none;
+}
+
+@media (max-width: 1260px) {
+  .container {
+    max-width: 960px;
+  }
+  .search-form {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+  .tabs-content {
+    flex-wrap: wrap;
+  }
+  .tabs-card {
+    flex: 50%;
+    max-width: calc(50% - 37px);
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    max-width: 750px;
+  }
+  .slide {
+    padding: 60px;
+  }
+  .card {
+    padding: 20px;
+  }
+  .tabs-card {
+    margin-bottom: 30px;
+  }
+  .tabs-card-2 {
+    margin-right: 0;
+  }
+  .delivery-card {
+    flex: 50%;
+    max-width: calc(50% - 30px);
+  }
+  .footer-logo {
+    margin-right: 40px;
+  }
+  .features-title {
+    padding-top: 60px;
+  }
+  .features-section {
+    flex-wrap: wrap;
+    padding-bottom: 102px;
+  }
+  .feature-card-2 {
+    margin-right: 0;
+  }
+  .feature-card {
+    flex: 50%;
+    max-width: calc(50% - 30px);
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 560px;
+  }
+  .header {
+    flex-wrap: wrap;
+  }
+  .slide {
+    padding: 20px;
+    min-height: 350px;
+  }
+  .search-form {
+    order: 4;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .promo {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    max-width: 90%;
+  }
+  .slide {
+    min-height: 300px;
+  }
+  .card {
+    min-height: 250px;
+  }
+  .tabs-card {
+    max-width: 100%;
+  }
+  .delivery-card {
+    max-width: 100%;
+  }
+  .delivery-week {
+    padding: 15px 0 30px 0;
+  }
+  .tabs-link {
+    margin-right: 25px;
+  }
+  .tabs-card {
+    margin-right: 5px;
+  }
+  .button-center {
+    margin-top: 10px;
+  }
+  .section-title {
+    line-height: 30px;
+  }
+  .category {
+    padding-top: 30px;
+    padding-bottom: 20px;
+  }
+  .feature-card {
+    max-width: 100%;
+    margin-right: 5px;
+  }
+  .features-section {
+    padding-bottom: 20px;
+  }
+  .footer-logo {
+    width: 140px;
+    margin-right: 20px;
+  }
 }
